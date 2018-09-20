@@ -9,12 +9,12 @@ package mp;
  *
  * @author Admin
  */
-public class SC_REGISTRATION_FORM1 extends javax.swing.JFrame {
+public class SC_REGISTRATION_FORM extends javax.swing.JFrame {
 
     /**
      * Creates new form SC_REGISTRATION_FORM1
      */
-    public SC_REGISTRATION_FORM1() {
+    public SC_REGISTRATION_FORM() {
         initComponents();
     }
 
@@ -292,10 +292,8 @@ public class SC_REGISTRATION_FORM1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SC_REGISTRATION_FORM1().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new SC_REGISTRATION_FORM().setVisible(true);
         });
     }
 
